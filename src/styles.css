@@ -1,26 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  outline: 0;
 }
+
 
 body {
-  font-size: 14px;
+  background: #eee;
+  font: 14px 'Poppins', sans-serif;
+  min-height: 100vh;
+  width: 100vw;
+
+  /* display: flex; */
+  /* align-items: center;: */
+  /* justify-content: center; */
 }
 
-div {
-  width: 100%;
-  margin: 20px;
-}
 
-div li {
-  display: flex;
-  align-items: center;
-}
-
-div li + li {
-  margin-top: 15px;
-}
 
 button {
   background: #7159c1;
@@ -31,9 +30,65 @@ button {
   margin-top: 15px;
   font-weight: bold;
   font-size: 14px;
+  border-radius: 5px;
 }
 
 div li button {
-  margin: 0 15px;
+  margin: 0;
   background: #ca4949;
 }
+
+#container {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  padding: 30px 0;
+}
+
+#container .input-blocks {
+  width: 100%;
+  max-width: 700px;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px 10px;
+
+  display: flex;
+  flex-direction: column;
+
+}
+
+#container .input-blocks input{
+  margin-top: 5px;
+
+  padding: 6px;
+  min-height: 42px;
+  border: 1px solid #eee;
+}
+
+#container .list {
+  margin-top: 10px;
+  width: 100%;
+  max-width: 700px;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px 10px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+#container .list ul li {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#container .list ul li:not(:last-of-type) {
+  border-bottom: 1px solid #e4e4e4;
+}
+
+
